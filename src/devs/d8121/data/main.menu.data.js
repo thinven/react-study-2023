@@ -30,6 +30,11 @@ export const mainSideMenus = [
         label: "Passing Props to a Component",
         key: "d8121.passingPropsToAComponent",
       },
+      {
+        path: "/d8121/conditionalRendering",
+        label: "Conditional Rendering",
+        key: "d8121.conditionalRendering",
+      },
     ],
   },
   { label: "Adding Interactivity", children: [] },

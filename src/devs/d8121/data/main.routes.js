@@ -1,8 +1,9 @@
-import YourFirstComponent from "../01.your.first.component/YourFirstComponent";
+import { YourFirstComponent } from "../01.your.first.component";
 import { ImportingAndExportingComponents } from "../02.importing.and.exporting.components";
 import { WritingMarkupWithJSX } from "../03.writing.markup.with.jsx";
 import { JavaScriptInJSXWithCurlyBraces } from "../04.javascript.in.jsx.with.curly.braces";
 import { PassingPropsToAComponent } from "../05.passing.props.to.a.component";
+import { ConditionalRendering } from "../06.conditional.rendering";
 
 export const mainRoutes = [
   {
@@ -29,5 +30,10 @@ export const mainRoutes = [
     path: "/d8121/passingPropsToAComponent",
     component: PassingPropsToAComponent,
     key: "d8121.passingPropsToAComponent",
+  },
+  {
+    path: "/d8121/conditionalRendering",
+    component: ConditionalRendering,
+    key: "d8121.conditionalRendering",
   },
 ];

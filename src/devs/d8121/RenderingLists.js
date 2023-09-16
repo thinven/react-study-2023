@@ -1,4 +1,4 @@
-import { getImageUrl } from "../../utils.js";
+import { getImageUrl } from "./utils.js";
 
 const people = [
   "Creola Katherine Johnson: mathematician",
