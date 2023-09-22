@@ -1,63 +1,25 @@
-import React from "react";
-
-import Gallery from "./Gallery";
+import React, { useEffect, useState } from "react";
 
 function ImportingAndExportingComponents() {
+
+  const [num, setNum] = useState(0);
+
+  useEffect(() => {
+    const increaseNum = async () => {
+      console.log('set Num:', num);
+      setNum(num + 1);
+    }
+    increaseNum();
+  }, [])
+
+  useEffect(() => {
+    console.log('detect num change');
+  }, [num])
+
+
   return (
     <>
-      <table>
-        <thead>
-          <tr>
-            <th>Syntax</th>
-            <th>Export statement</th>
-            <th>Import statement</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Default</td>
-            <td>
-              <code
-                dir="ltr"
-                className="inline text-code text-secondary dark:text-secondary-dark px-1 rounded-md no-underline bg-gray-30 bg-opacity-10 py-px"
-              >
-                export default function Button() {"{"}
-                {"}"}
-              </code>
-            </td>
-            <td>
-              <code
-                dir="ltr"
-                className="inline text-code text-secondary dark:text-secondary-dark px-1 rounded-md no-underline bg-gray-30 bg-opacity-10 py-px"
-              >
-                import Button from './Button.js';
-              </code>
-            </td>
-          </tr>
-          <tr>
-            <td>Named</td>
-            <td>
-              <code
-                dir="ltr"
-                className="inline text-code text-secondary dark:text-secondary-dark px-1 rounded-md no-underline bg-gray-30 bg-opacity-10 py-px"
-              >
-                export function Button() {"{"}
-                {"}"}
-              </code>
-            </td>
-            <td>
-              <code
-                dir="ltr"
-                className="inline text-code text-secondary dark:text-secondary-dark px-1 rounded-md no-underline bg-gray-30 bg-opacity-10 py-px"
-              >
-                import {"{"} Button {"}"} from './Button.js';
-              </code>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <Gallery />
+      <div>aa</div>
     </>
   );
 }
